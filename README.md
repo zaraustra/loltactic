@@ -1,2 +1,0 @@
-# loltactic
-readme file
