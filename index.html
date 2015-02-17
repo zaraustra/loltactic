@@ -1,0 +1,99 @@
+<html>
+	<head>
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="scripts/jquery.js"></script>
+		<script type="text/javascript" src="scripts/jquery-ui.min.js"></script>		
+		<script type="text/javascript" src="scripts/canvas.js"></script>
+		<script type="text/javascript" src="scripts/mapItems.js"></script>
+		<script type="text/javascript" src="scripts/menuSlide.js"></script>
+		<script type="text/javascript" src="scripts/champSearch.js"></script>
+		<script type="text/javascript" src="scripts/drawingTools.js"></script>
+	</head>
+	<body>
+		<div id="content">
+			<div id="colsx">
+				<img id="logo" src="images/logo.png"/>
+				<div id="blueTeam">
+					<img src="images/blueteam.png" alt="Blue Team"/>
+					<img src="images/utility.png" class="ulMenu utiSimbols blue" alt="Utility"/>
+					<ul id="utiSimbolsblue" class="ulBlue">
+						<li><img class="simbol blue" src="images/visionWard.jpg" title="Vision ward"/></li>
+						<li><img class="simbol blue" src="images/pinkWard.jpg" title="Pink ward"/></li>
+					</ul>
+					<img src="images/class.png" class="ulMenu classSimbols blue" alt="Class"/>
+					<ul id="classSimbolsblue" class="ulBlue">
+						<li><img class="simbol blue" src="images/mage.jpg" title="Mage"/></li>
+						<li><img class="simbol blue" src="images/fighter.jpg" title="Fighter"/></li>
+						<li><img class="simbol blue" src="images/tank.jpg" title="Tank"/></li>
+						<li><img class="simbol blue" src="images/support.jpg" title="Support"/></li>
+						<li><img class="simbol blue" src="images/assassin.jpg" title="Assassin"/></li>
+						<li><img class="simbol blue" src="images/adc.jpg" title="Adc"/></li>
+					</ul>
+					<img src="images/role.png" class="ulMenu roleSimbols blue" alt="Role"/>
+					<ul id="roleSimbolsblue" class="ulBlue">
+						<li><img class="simbol blue" src="images/top.png" title="Top"/></li>
+						<li><img class="simbol blue" src="images/jung.png" title="Jungler"/></li>
+						<li><img class="simbol blue" src="images/mid.png" title="Mid"/></li>
+						<li><img class="simbol blue" src="images/adc.png" title="Adc"/></li>
+						<li><img class="simbol blue" src="images/supp.png" title="Support"/></li>
+					</ul>
+					<img src="images/champion.png" class="ulMenu champSimbols blue" alt="Champion"/>
+					<div id="champSimbolsblue" class="ulBlue">
+						<input type="text" placeholder="Search champion here..." id="champSearchBlue"/>
+						<div class="appendblue">
+						</div>
+					</div>
+				</div>
+				<div id="redTeam">
+					<img src="images/redteam.png" alt="Red Team"/>
+					<img src="images/utility.png" class="ulMenu utiSimbols red" alt="Utility"/>
+					<ul id="utiSimbolsred" class="ulRed">
+						<li><img class="simbol red" src="images/visionWard.jpg" title="Vision ward"/></li>
+						<li><img class="simbol red" src="images/pinkWard.jpg" title="Pink ward"/></li>
+					</ul>
+					<img src="images/class.png" class="ulMenu classSimbols red" alt="Class"/>
+					<ul id="classSimbolsred" class="ulRed">
+						<li><img class="simbol red" src="images/mage.jpg" title="Mage"/></li>
+						<li><img class="simbol red" src="images/fighter.jpg" title="Fighter"/></li>
+						<li><img class="simbol red" src="images/tank.jpg" title="Tank"/></li>
+						<li><img class="simbol red" src="images/support.jpg" title="Support"/ </li>
+						<li><img class="simbol red" src="images/assassin.jpg" title="Assassin"/></li>
+						<li><img class="simbol red" src="images/adc.jpg" title="Adc"/></li>
+					</ul>
+					<img src="images/role.png" class="ulMenu roleSimbols red" alt="Role"/>
+					<ul id="roleSimbolsred" class="ulRed">
+						<li><img class="simbol red" src="images/top.png" title="Top"/></li>
+						<li><img class="simbol red" src="images/jung.png" title="Jungler"/></li>
+						<li><img class="simbol red" src="images/mid.png" title="Mid"/></li>
+						<li><img class="simbol red" src="images/adc.png" title="Adc"/></li>
+						<li><img class="simbol red" src="images/supp.png" title="Support"/></li>
+					</ul>
+					<img src="images/champion.png" class="ulMenu champSimbols red" alt="Champion"/>
+					<div id="champSimbolsred" class="ulRed">
+						<input type="text" placeholder="Search champion here..." id="champSearchRed"/>
+						<div class="appendred">
+						</div>
+					</div>
+				</div>	
+			</div>
+			<div id="map">
+				<canvas id="imageView" width="718px" height="600px">
+					<p>Unfortunately, your browser is currently unsupported by our web application. We are sorry for the inconvenience. Please use one of the supported browsers listed below, or draw the image you want using an offline tool.</p>
+					<p>Supported browsers: <a href="http://www.opera.com">Opera</a>, <a href="http://www.mozilla.com">Firefox</a>, <a href="http://www.apple.com/safari">Safari</a>, and <a href="http://www.konqueror.org">Konqueror</a>.</p>
+				</canvas>
+				<div id="recBin">
+				</div>
+			</div>
+			<div id="coldx">
+				<input id="makeImg" type="button" value="Make image"/>
+				<ul id="colorpicker">
+					<li><div id="#000000" style="background-color:#000000" class="selected"></div></li>
+					<li><div id="#FF0000" style="background-color:#FF0000"></div></li>
+					<li><div id="#00FF00" style="background-color:#00FF00"></div></li>
+					<li><div id="#0000FF" style="background-color:#0000FF"></div></li>
+					<li><div id="#FFFFFF" style="background-color:#FFFFFF"></div></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
