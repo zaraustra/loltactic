@@ -58,7 +58,8 @@ body{
 	cursor:pointer;}
 .mapItem{
 	border-radius: 3px;
-	height:15px;}
+	height:15px;
+	cursor:pointer}
 ul{
 	margin:0px;
 	padding:0px;}
