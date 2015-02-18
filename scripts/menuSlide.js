@@ -1,34 +1,46 @@
 $(function(){
-	$(".ulMenu").click(function(){
+	$(".menuTitle").click(function(){
+		$(".submenu").slideUp();
+
 		var test=$(this).attr("class");
-		if ($(this).hasClass("blue")){
-			var color="blue";
-			$(".ulBlue").slideUp();
-		} else {
-			var color="red";
-			$(".ulRed").slideUp();
-		}
+
 		switch (test){
-			case "ulMenu utiSimbols"+" "+color:
-				if($("#utiSimbols"+color).is(':hidden')){
-					$("#utiSimbols"+color).slideDown();
-				} else {$("#utiSimbols"+color).slideUp();}
+			case "menuTitle utiSimbols":
+				if($("#utiSimbols").is(':hidden')){
+					$("#utiSimbols").slideDown();
+				} else {$("#utiSimbols").slideUp();}
 				break;
-			case "ulMenu classSimbols"+" "+color:
-				if($("#classSimbols"+color).is(':hidden')){
-					$("#classSimbols"+color).slideDown();
-				} else {$("#classSimbols"+color).slideUp();}
+			case "menuTitle classSimbols":
+				if($("#classSimbols").is(':hidden')){
+					$("#classSimbols").slideDown();
+				} else {$("#classSimbols").slideUp();}
 				break;
-			case "ulMenu roleSimbols"+" "+color:
-				if($("#roleSimbols"+color).is(':hidden')){
-					$("#roleSimbols"+color).slideDown();
-				} else {$("#roleSimbols"+color).slideUp();}
+			case "menuTitle roleSimbols":
+				if($("#roleSimbols").is(':hidden')){
+					$("#roleSimbols").slideDown();
+				} else {$("#roleSimbols").slideUp();}
 				break;
-			case "ulMenu champSimbols"+" "+color:
-				if($("#champSimbols"+color).is(':hidden')){
-					$("#champSimbols"+color).slideDown();
-				} else {$("#champSimbols"+color).slideUp();}
+			case "menuTitle champSimbols":
+				if($("#champSimbols").is(':hidden')){
+					$("#champSimbols").slideDown();
+				} else {$("#champSimbols").slideUp();}
 				break;
 		}
+	});
+
+	$(".team").click(function(){
+		$(".team").removeClass("selected");
+		$(this).addClass("selected");
+		//check selected team and set color 
+		if ($(this).attr("id")=="blue"){
+			color="blue";
+			$("#red").slideUp();
+		} else {
+			color="red";
+			$("#blue").slideUp();}
+	});
+	
+	$("#teamSelect").click(function(){
+		$(".team").slideDown();
 	});
 });
